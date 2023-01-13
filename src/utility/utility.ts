@@ -9,9 +9,10 @@
 
  export function getInputGroupType(inputSize: number, sampleSize: number = 10, acc: IndexGroupType[] = [], start: number = 0): IndexGroupType[] {
      if (inputSize < sampleSize) {
-         acc.push({
+        console.log(sampleSize); 
+        acc.push({
              s: start,
-             e: inputSize
+             e: start + inputSize
          });
          return acc
      } else {
